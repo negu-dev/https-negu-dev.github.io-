@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>sample-form-input</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<form>
+<dl>
+<dt>input type=&#8221;text&#8221;</dt>
+<dd><input type="text"></dd>
+<dt>input type=&#8221;text&#8221; list=&#8221;xxxxxx&#8221; + datalist id=&#8221;xxxxxx&#8221;</dt>
+<dd><input type="text" list="xxxxxx"><datalist id="xxxxxx"><option value="サジェストします　１"><option value="サジェストします　２"><option value="サジェストします　３"><option value="サジェストします　４"><option value="サジェストします　５"></datalist></dd>
+<dt>input type=&#8221;text&#8221; pattern=&#8221;[0-9]{8}&#8221;</dt>
+<dd><input type="text" pattern="[0-9]{8}"> 8桁の数字を入力してください（正規表現チェック）</dd>
+<dt>input type=&#8221;search&#8221;</dt>
+<dd><input type="search">　検索キーワードを入力してください</dd>
+<dt>input type=&#8221;text&#8221; placeholder=&#8221;検索キーワードを入力してください&#8221;</dt>
+<dd><input type="text" placeholder="検索キーワードを入力してください" size=40> ←今までJavascriptで実装していた動き</dd>
+<dt>input type=&#8221;tel&#8221;</dt>
+<dd><input type="tel"> 電話番号を入力してください</dd>
+<dt>input type=&#8221;url&#8221;</dt>
+<dd><input type="url"> URLを入力してください</dd>
+<dt>input type=&#8221;email&#8221;</dt>
+<dd><input type="email"> メールアドレスを入力してください</dd>
+<dt>input type=&#8221;password&#8221;</dt>
+<dd><input type="password"> パスワード入力</dd>
+<dt>input type=&#8221;datetime&#8221;</dt>
+<dd><input type="datetime"> 日時入力</dd>
+<dt>input type=&#8221;date&#8221;</dt>
+<dd><input type="date"> 日付入力</dd>
+<dt>input type=&#8221;date&#8221; max=&#8221;2070-10-31&#8243; min=&#8221;1870-01-05&#8243;</dt>
+<dd><input type="date" max="2060-10-31" min="1960-01-05"> 日付入力（上限、下限あり）</dd>
+<dt>input type=&#8221;month&#8221;</dt>
+<dd><input type="month"> 月入力</dd>
+<dt>input type=&#8221;week&#8221;</dt>
+<dd><input type="week"> 週入力</dd>
+<dt>input type=&#8221;time&#8221;</dt>
+<dd><input type="time"> 時間入力</dd>
+<dt>input type=&#8221;datetime-local&#8221;</dt>
+<dd><input type="datetime-local"> 日時入力</dd>
+<dt>input type=&#8221;number&#8221;</dt>
+<dd><input type="number"> 数値を入れてください</dd>
+<dt>input type=&#8221;range&#8221;</dt>
+<dd><input type="range"> スライダーで値を指定できる</dd>
+<dt>input type=&#8221;color&#8221;</dt>
+<dd><input type="color"> カラーピッカー</dd>
+<dt>input type=&#8221;checkbox&#8221;</dt>
+<dd><input type="checkbox"> チェックボックス</dd>
+<dt>input type=&#8221;radio&#8221;</dt>
+<dd><input type="radio"> ラジオボタン</dd>
+<dt>input type=&#8221;file&#8221;</dt>
+<dd><input type="file"> ファイルをひとつ指定してください</dd>
+<dt>input type=&#8221;file&#8221; multiple</dt>
+<dd><input type="file" multiple> ファイルを指定してください（複数可）</dd>
+<dt>input type=&#8221;file&#8221; accept=&#8221;image/*&#8221;</dt>
+<dd><input type="file" accept="image/*"> 画像ファイルを指定してください</dd>
+<dt>input type=&#8221;submit&#8221;</dt>
+<dd><input type="submit"> submitボタンにも新しい機能が追加されている。また今度紹介する。</dd>
+<dt>input type=&#8221;button&#8221;</dt>
+<dd><input type="button" value=""></dd>
+</dl>
+</form>
+</body>
+</html>

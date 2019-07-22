@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>sample</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div>
+<h1>コンボボックス テスト</h1>
+
+<h2>■5つの選択</h2>
+<select name="example">
+<option value="選択肢1">選択肢のサンプル1</option>
+<option value="選択肢2">選択肢のサンプル2</option>
+<option value="選択肢3">選択肢のサンプル3</option>
+<option value="選択肢4">選択肢のサンプル4</option>
+<option value="選択肢5">選択肢のサンプル5</option>
+</select>
+
+<h2>■size属性指定</h2>
+<select name="example" size="5">
+<option value="選択肢1">選択肢のサンプル1</option>
+<option value="選択肢2">選択肢のサンプル2</option>
+<option value="選択肢3">選択肢のサンプル3</option>
+<option value="選択肢4">選択肢のサンプル4</option>
+<option value="選択肢5">選択肢のサンプル5</option>
+<option value="選択肢6">選択肢のサンプル6</option>
+<option value="選択肢7">選択肢のサンプル7</option>
+</select>
+
+<h2>■multiple属性指定</h2>
+<select name="example" multiple>
+<option value="選択肢1">選択肢のサンプル1</option>
+<option value="選択肢2">選択肢のサンプル2</option>
+<option value="選択肢3">選択肢のサンプル3</option>
+<option value="選択肢4">選択肢のサンプル4</option>
+<option value="選択肢5">選択肢のサンプル5</option>
+<option value="選択肢6">選択肢のサンプル6</option>
+<option value="選択肢7">選択肢のサンプル7</option>
+</select>
+
+<h2>■disabled属性指定</h2>
+<select name="example" disabled>
+<option value="選択肢1">選択肢のサンプル1</option>
+<option value="選択肢2">選択肢のサンプル2</option>
+<option value="選択肢3">選択肢のサンプル3</option>
+</select>
+
+<h2>■required属性指定</h2>
+
+<form method="get" action="select.html">
+
+<p>
+<select name="example" required>
+<option value="">選択してください</option>
+<option value="選択肢1">選択肢のサンプル1</option>
+<option value="選択肢2">選択肢のサンプル2</option>
+<option value="選択肢3">選択肢のサンプル3</option>
+<option value="選択肢4">選択肢のサンプル4</option>
+<option value="選択肢5">選択肢のサンプル5</option>
+</select>
+ <strong>必須</strong>
+</p>
+
+<p><input type="submit" value="送信する"></p>
+
+</form>
+
+<h2>■グループ化</h2>
+<select name="example">
+
+<option value="">選択してください</option>
+
+<optgroup label="グループA">
+<option value="A-1">選択肢A-1</option>
+<option value="A-2">選択肢A-2</option>
+<option value="A-3">選択肢A-3</option>
+</optgroup>
+
+<optgroup label="グループB">
+<option value="B-1">選択肢B-1</option>
+<option value="B-2">選択肢B-2</option>
+<option value="B-3">選択肢B-3</option>
+</optgroup>
+
+<optgroup label="グループC">
+<option value="C-1">選択肢C-1</option>
+<option value="C-2">選択肢C-2</option>
+<option value="C-3">選択肢C-3</option>
+</optgroup>
+
+</select>
+
+<h2>■グループ化(disabled属性指定)</h2>
+<select name="example">
+
+<option value="">選択してください</option>
+
+<optgroup label="グループA">
+<option value="A-1">選択肢A-1</option>
+<option value="A-2">選択肢A-2</option>
+<option value="A-3">選択肢A-3</option>
+</optgroup>
+
+<optgroup label="グループB" disabled>
+<option value="B-1">選択肢B-1</option>
+<option value="B-2">選択肢B-2</option>
+<option value="B-3">選択肢B-3</option>
+</optgroup>
+
+<optgroup label="グループC">
+<option value="C-1">選択肢C-1</option>
+<option value="C-2">選択肢C-2</option>
+<option value="C-3">選択肢C-3</option>
+</optgroup>
+
+</select>
+
+<h2>■データリスト</h2>
+<datalist id="test">
+<option value="サンプル1"></option>
+<option value="サンプル2"></option>
+<option value="サンプル3"></option>
+</datalist>
+
+</body>
+</html>
