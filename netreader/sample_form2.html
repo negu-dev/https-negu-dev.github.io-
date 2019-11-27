@@ -1,0 +1,24 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>フォーム要素(入力)</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <p>連続してフォーム系のコントロールが配置されているサンプル</p>
+    <form method="get" action="">
+    <div>
+    	検索<input type="search" autocomplete="on" list="list">
+        <!-- 候補を表示 -->
+        <datalist id="list">
+              <option value="aaa">
+              <option value="abb">
+              <option value="acc">
+              <option value="add">
+            </datalist>
+    <input type="submit" value="検索">
+    </div>
+    </form>
+</body>
+</html>
