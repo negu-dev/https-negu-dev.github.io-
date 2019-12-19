@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -6,14 +6,20 @@
 <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<p>ruby要素 - rt：小さいもじで表示させるテキストを指定</p>
-<ruby>宇宙<rt>そら</rt></ruby>です
-<br>
-<p>ruby要素 - rtc:複数の&lt;rt&gt;タグをグループ化する要素</p>
-<ruby>
-<rb>宇宙</rb>
-<rt>そ</rt><rt>ら</rt>
-<rtc lang="en"><rt>so</rt><rt>ra</rt></rtc>
-</ruby>です
+    <h1>モノルビ</h1>
+    <p>文字ごとに個別指定</p>
+    <p><ruby>漢<rt>かん</ruby><ruby>字<rt>じ</ruby></p>
+    <br>
+    <p><ruby>漢<rt>かん</rt></ruby><ruby>字<rt>じ</rt></ruby></p>
+    <br>
+    <p>国語：<ruby>漢<rt>かん</rt>字<rt>じ</rt></ruby>を書く</p>
+    <br>
+    <h1>グループルビ</h1>
+    <p><ruby>今日<rt>きょう</ruby></p>
+    <br>
+    <p><ruby>今日<rt>きょう</rt></ruby></p>
+    <br>
+    <p>未対応ブラウザ対策あり</p>
+    <p><ruby>漢<rp>（</rp><rt>かん</rt><rp>）</rp>字<rp>（</rp><rt>じ</rt><rp>）</rp></ruby></p>
 </body>
 </html>
